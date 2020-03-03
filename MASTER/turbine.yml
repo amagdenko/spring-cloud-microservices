@@ -5,8 +5,13 @@ server:
 #  amqp:
 #    port: 8989
 
+
+---
+spring:
+  profiles: cloud
+
 management:
-    port: 8990
+  port: -1
 
 spring:
   rabbitmq:
