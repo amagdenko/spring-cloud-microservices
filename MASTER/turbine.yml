@@ -5,13 +5,11 @@ server:
 #  amqp:
 #    port: 8989
 
-
----
-spring:
-  profiles: cloud
-
 management:
-  port: -1
+    endpoints:
+        web:
+            exposure:
+                include: hystrix.stream, info, health
 
 spring:
   rabbitmq:
