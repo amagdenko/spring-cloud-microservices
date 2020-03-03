@@ -1,5 +1,9 @@
 server:
-  port: 0
-turbine:
-  amqp:
-    port: 8989
+  port: 8989
+
+#turbine:
+#  amqp:
+#    port: 8989
+
+management:
+    port: 8990
